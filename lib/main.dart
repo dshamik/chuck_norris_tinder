@@ -64,13 +64,13 @@ class _MyHomePageState extends State<MyHomePage> {
           borderRadius: BorderRadius.circular(40),
           child: Card(
             child: Column(
-             children: [
+              children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: _imageGenerator.getImage(),
                 ),
                 Padding(
-                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: FutureBuilder(
                     future: _client.getData(),
                     builder: (context, snapshot) {
@@ -90,10 +90,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+        body: SafeArea(
+      child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -137,7 +139,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-    );
+    ));
   }
-
 }
