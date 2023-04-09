@@ -8,13 +8,13 @@ class API {
 
   API(this.apiUri);
 
-  Future<ChuckNorris?> getData() async {
-    ChuckNorris? chuckNorris;
+  Future<ChuckNorris> getData() async {
+    ChuckNorris chuckNorris;
     try {
       var response = await client.get(apiUri);
       chuckNorris = ChuckNorris.fromJson(jsonDecode(response.body));
     } catch (e) {
-      chuckNorris = null;
+      chuckNorris = ChuckNorris("no", "no", "no");
     }
 
     return chuckNorris;

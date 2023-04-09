@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "636883472217",
+    "project_id": "chucknorrisjokes-831ae",
+    "storage_bucket": "chucknorrisjokes-831ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636883472217:android:c93d8ec0e0735ae4e38648",
+        "android_client_info": {
+          "package_name": "ya.ruski.chuck_norris_tinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636883472217-iop61up5ml0sunubpbk4827frdgdsirh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJvr4seETGfWcKCmVmiqNtySQ6UaBmpk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636883472217-iop61up5ml0sunubpbk4827frdgdsirh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
