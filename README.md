@@ -21,6 +21,12 @@ Once you have the app running, you can *swipe* left or right on the cards to
 buttons at the bottom of the screen to perform the same actions. When you run out
 of cards, more will be generated automatically.
 
+## Changes with previous version
+
+Now, you can store your favorite jokes. You can find them in "Favorites" section. 
+Also added app icon and handling of internet disconection. Unhandled exceptions 
+handled with Crashlytics. Liked jokes stored in Firebase. And also localization is added.
+
 ## Examples
 
 There are some screenshots of Chuck Norris' jokes:
@@ -37,6 +43,13 @@ There are some screenshots of Chuck Norris' jokes:
 
 ![Alt-And some physics from Chuck](/assets/screenshots/screenshot_3.png)
 
+4. Like button at the top
+
+![Alt-Like button at the top](/assets/screenshots/screenshot_4.jpeg)
+
+5. Favorite jokes
+
+![Alt-Favorite jokes](/assets/screenshots/screenshot_5.jpeg)
 ## APK
 
 Here is the [**link**](https://github.com/dshamik/chuck_norris_tinder/blob/main/apk/app-release.apk) to download APK file
