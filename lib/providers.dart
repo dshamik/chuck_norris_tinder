@@ -5,7 +5,8 @@ import 'package:riverpod/riverpod.dart';
 import 'package:chuck_norris_tinder/database/database.dart';
 
 final fireStoreProvider = Provider((ref) => FireStoreClient());
-final apiProvider = Provider((ref) => API(Uri.https('api.chucknorris.io', 'jokes/random')));
+final apiProvider =
+    Provider((ref) => API(Uri.https('api.chucknorris.io', 'jokes/random')));
 final imageProvider = Provider((ref) => ImageGenerator());
 final connectionProvider =
-NotifierProvider<ConnectivityProvider, bool>(ConnectivityProvider.new);
+    NotifierProvider<ConnectivityProvider, bool>(ConnectivityProvider.new);

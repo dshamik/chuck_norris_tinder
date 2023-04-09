@@ -49,7 +49,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
                       if (snapshot.hasData) {
                         return Text(snapshot.data!.value);
                       }
-                      return  Text("loading".i18n());
+                      return Text("loading".i18n());
                     },
                   ),
                 ),
@@ -71,25 +71,28 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: <Widget>[
-            Text("main-title".i18n()),
-            const SizedBox(width: 40),
-            IconButton(
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute<void>(
-                  builder: (BuildContext context) {
-                    return const FavoritesScreen();
-                  },
-                ),);
-              },
-              icon: const Icon(Icons.favorite, color: Colors.white),
-            )
-          ],
+        appBar: AppBar(
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Text("main-title".i18n()),
+              const SizedBox(width: 40),
+              IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute<void>(
+                      builder: (BuildContext context) {
+                        return const FavoritesScreen();
+                      },
+                    ),
+                  );
+                },
+                icon: const Icon(Icons.favorite, color: Colors.white),
+              )
+            ],
+          ),
         ),
-      ),
         body: SafeArea(
           child: Center(
             child: Column(

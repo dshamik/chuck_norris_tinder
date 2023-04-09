@@ -11,8 +11,8 @@ class ConnectivityProvider extends Notifier<bool> {
     );
 
     final StreamSubscription<InternetConnectionStatus> _ =
-    internetProvider.onStatusChange.listen(
-          (InternetConnectionStatus status) {
+        internetProvider.onStatusChange.listen(
+      (InternetConnectionStatus status) {
         switch (status) {
           case InternetConnectionStatus.connected:
             state = true;

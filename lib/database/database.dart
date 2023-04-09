@@ -16,6 +16,7 @@ class FireStoreClient {
   }
 
   Stream<List<ChuckNorris>> get() {
-    return _jokesCollection.snapshots().map((snapshot) => snapshot.docs.map((doc) => ChuckNorris.fromJson(doc.data())).toList());
+    return _jokesCollection.snapshots().map((snapshot) =>
+        snapshot.docs.map((doc) => ChuckNorris.fromJson(doc.data())).toList());
   }
 }
